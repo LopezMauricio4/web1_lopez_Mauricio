@@ -1,7 +1,5 @@
 body {
     background-color: rgb(240, 232, 225);
-    margin: 0;
-    padding: 0;
     background-image: url("https://images.pexels.com/photos/2058946/pexels-photo-2058946.jpeg");
     background-size: cover;
     background-position: center;
@@ -17,8 +15,39 @@ header {
 
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+    height: 100%;
+    gap: 5rem;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 3rem;
+}
+
+.info-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.info-header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+
 .tamanioSeccion {
-    height: 100vh;
+
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -26,34 +55,123 @@ header {
 
 }
 
-.bienvenido {
-    background-color: rgba(205, 223, 212, 0.7);
-}
+.sobreMi {
 
-.quienSoy {
-    background-color: rgba(194, 207, 196, 0.7);
-}
-
-.formacionAcademica {
-    background-color: rgba(203, 211, 189, 0.7);
-}
-
-.emprendimientos {
-    background-color: rgba(192, 191, 209, 0.7);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(95, 141, 172, 0.7);
 
 }
+
+.container-sobreMi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #0e0d0d;
+}
+
+.imagen {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.fotoSobreMi {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0);
+    margin-right: 3rem;
+}
+
 
 .tiempoLibre {
     background-color: rgba(200, 209, 218, 0.7);
 }
 
+.tiempLibreTexto {
+
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #0e0d0d;
+}
+
+.tiempoLibre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.tiempoLibreTexto {
+    margin-bottom: 20px;
+}
+
+.imagenesTiempoLibre {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.fotoTiempoLibre {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
 .GaleriaVisual {
     background-color: rgba(216, 199, 199, 0.7);
 }
+.formacionAcademica {
+    background-color: rgba(122, 118, 118, 0.7);
+}
 
 .misMetas {
-    background-color: rgba(204, 188, 188, 0.7);
 
+    padding: 2rem;
+    display: flex;
+    background-color: rgba(204, 188, 188, 0.7);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.contenedor-metas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+
+.meta {
+
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
 }
 
 footer {
@@ -62,4 +180,157 @@ footer {
     align-items: center;
     justify-content: center;
 
+}
+
+footer {
+    background-color: #44473bd2;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.contacto-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.redes-sociales {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icono-link img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.icono-link img:hover {
+    transform: scale(1.1);
+}
+
+.creditos {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Estilos para pantallas de hasta 768px (teléfonos) */
+@media (max-width: 768px) {
+       /* Contenedor principal del encabezado */
+    .container {
+        flex-direction: column;
+        align-items: center; /* Centra la foto y el texto horizontalmente */
+        justify-content: flex-start; /* Coloca el contenido en la parte superior */
+        height: auto; /* La altura se ajusta al contenido */
+        padding-top: 2rem; /* Espacio superior para que el contenido no se pegue al borde */
+    }
+
+    /* Foto de perfil */
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+        margin-right: 0; /* Elimina el margen a la derecha */
+        margin-bottom: 1.5rem; /* Añade espacio debajo de la foto */
+    }
+
+    /* Contenedor del nombre y la profesión */
+    .info-header {
+        text-align: center;
+    }
+
+   
+ .formacionAcademica {
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        padding: 2rem 1rem; /* Más espacio en los lados para móviles */
+    }
+
+    .textoFormacion {
+        font-size: 1rem; /* Reduce el tamaño del texto para móviles */
+        padding: 0 1rem; /* Asegura que el texto no se desborde */
+    }
+    .containerAcademica {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem 1rem;
+    }
+
+    /* En el encabezado, cambia la dirección a columna */
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .texto {
+        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+
+    .info-header h1 {
+        font-size: 2rem;
+    }
+
+    .info-header p {
+        font-size: 1rem;
+    }
+
+    /* En la sección "Sobre Mí", apila el texto y la imagen */
+    .container-sobreMi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fotoSobreMi {
+        margin-right: 0;
+    }
+
+    /* En el pie de página, apila los elementos */
+    footer {
+        flex-direction: column;
+    }
+
+    .redes-sociales {
+        gap: 10px;
+    }
+}
+
+/* Estilos para pantallas de 769px a 1024px (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        gap: 3rem;
+    }
+
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .info-header p {
+        font-size: 1.1rem;
+    }
+
+    .container-sobreMi {
+        gap: 10px;
+    }
+
+    .fotoSobreMi {
+        width: 250px;
+        height: 250px;
+    }
+
+    .meta {
+        width: 45%;
+    }
 }
