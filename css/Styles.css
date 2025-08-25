@@ -221,26 +221,26 @@ footer {
     color: #bbb;
 }
 
-/* Estilos para pantallas de hasta 768px (teléfonos) */
+
 @media (max-width: 768px) {
-       /* Contenedor principal del encabezado */
+
     .container {
         flex-direction: column;
-        align-items: center; /* Centra la foto y el texto horizontalmente */
-        justify-content: flex-start; /* Coloca el contenido en la parte superior */
-        height: auto; /* La altura se ajusta al contenido */
-        padding-top: 2rem; /* Espacio superior para que el contenido no se pegue al borde */
+        align-items: center; 
+        justify-content: flex-start;
+        height: auto;
+        padding-top: 2rem; 
     }
 
-    /* Foto de perfil */
+    
     .foto-perfil {
         width: 100px;
         height: 100px;
-        margin-right: 0; /* Elimina el margen a la derecha */
-        margin-bottom: 1.5rem; /* Añade espacio debajo de la foto */
+        margin-right: 0; 
+        margin-bottom: 1.5rem; 
     }
 
-    /* Contenedor del nombre y la profesión */
+    
     .info-header {
         text-align: center;
         color: #fff;
@@ -248,13 +248,13 @@ footer {
 
    
  .formacionAcademica {
-        height: auto; /* Permite que la altura se ajuste al contenido */
-        padding: 2rem 1rem; /* Más espacio en los lados para móviles */
+        height: auto; 
+        padding: 2rem 1rem; 
     }
 
     .textoFormacion {
-        font-size: 1rem; /* Reduce el tamaño del texto para móviles */
-        padding: 0 1rem; /* Asegura que el texto no se desborde */
+        font-size: 1rem; 
+        padding: 0 1rem; 
     }
     .containerAcademica {
         flex-direction: column;
@@ -262,7 +262,7 @@ footer {
         gap: 2rem 1rem;
     }
 
-    /* En el encabezado, cambia la dirección a columna */
+    
     .container {
         flex-direction: column;
         text-align: center;
@@ -283,7 +283,7 @@ footer {
         font-size: 1rem;
     }
 
-    /* En la sección "Sobre Mí", apila el texto y la imagen */
+   
     .container-sobreMi {
         flex-direction: column;
         text-align: center;
@@ -293,7 +293,7 @@ footer {
         margin-right: 0;
     }
 
-    /* En el pie de página, apila los elementos */
+   
     footer {
         flex-direction: column;
     }
@@ -303,7 +303,7 @@ footer {
     }
 }
 
-/* Estilos para pantallas de 769px a 1024px (tabletas) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .container {
         gap: 3rem;
